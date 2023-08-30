@@ -18,7 +18,7 @@ font-family: 'Roboto Mono', monospace;
     transform: translateY(0);
   }
   100% {
-    transform: translateY(0.6rem);
+    transform: translateY(-0.6rem);
   }
 }
 @keyframes drop {
@@ -76,6 +76,7 @@ body {
 }
 .header-option:hover {
   color: var(--primary-color);
+  animation: ease-in 0.4s 0.3s alternate infinite bounce;
 }
 
 .home {
