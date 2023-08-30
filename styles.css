@@ -115,6 +115,9 @@ body {
   font-size: 4.6rem;
   font-weight: 900;
 }
+.home div h1 img {
+  height: 3.6rem;
+}
 .home div span {
   width: 36vw;
   font-size: 1.3rem;
@@ -233,11 +236,10 @@ body {
 }
 
 .contact {
-  height: 60vh;
+  height: 76vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* padding: 0 6rem; */
   background: linear-gradient(
     13deg,
     rgba(192, 255, 255, 0.6811099439775911) 0%,
