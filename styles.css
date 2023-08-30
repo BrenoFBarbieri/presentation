@@ -261,7 +261,10 @@ body {
   gap: 3rem;
 }
 .contact div div {
+  width: 20vw;
+  height: 12vh;
   flex-direction: row;
+  justify-content: center;
   gap: 3rem;
 }
 .contact div a {
@@ -270,7 +273,18 @@ body {
   display: flex;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: var(--primary-color);
   cursor: pointer;
   box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+  transition: all 0.3s ease-in-out;
+}
+.contact div a:hover {
+  width: 4rem;
+  height: 4rem;
+  box-shadow: rgba(100, 100, 111) 0px 7px 29px 0px;
+}
+.contact div a img {
+  opacity: 80%;
+}
+.contact div a img:hover {
+  opacity: 100%;
 }
