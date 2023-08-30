@@ -8,7 +8,6 @@ font-family: 'Roboto Mono', monospace;
   --font-size-primary: 1.9rem;
   --font-size-secondary: 1.3rem;
   --primary-color: #8be3e1;
-  --secondary-color: #f2f2f2;
   --text-color: #36413d;
   --bg-color: #fff;
 }
@@ -38,21 +37,52 @@ font-family: 'Roboto Mono', monospace;
   }
 }
 
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
 body {
   display: flex;
   flex-direction: column;
   color: var(--text-color);
   background-color: var(--bg-color);
   font-family: var(--font-family-primary);
+  scroll-snap-type: y mandatory;
+}
+body::-webkit-scrollbar {
+  width: 1rem; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--primary-color); /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--text-color); /* color of the scroll thumb */
+  border-radius: 1rem; /* roundness of the scroll thumb */
+  border: 0.3rem solid var(--primary-color); /* creates padding around scroll thumb */
+}
+section {
+  scroll-snap-align: start;
+  height: 100vh;
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    315deg,
+    rgba(192, 255, 255, 0.44861694677871145) 0%,
+    rgba(236, 255, 255, 1) 3%,
+    rgba(255, 255, 255, 1) 74%
+  );
+}
 .header {
-  height: 6rem;
+  height: 6vw;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 3rem;
   grid-area: header;
+  padding: 0 6rem;
 }
 .header-option {
   font-family: var(--font-family-primary);
@@ -78,23 +108,10 @@ body {
   color: var(--primary-color);
   animation: ease-in 0.4s 0.3s alternate infinite bounce;
 }
-
-.home {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 0 6rem;
-  background: linear-gradient(
-    315deg,
-    rgba(192, 255, 255, 0.44861694677871145) 0%,
-    rgba(236, 255, 255, 1) 3%,
-    rgba(255, 255, 255, 1) 74%
-  );
-}
 .home-content {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  gap: 6rem;
 }
 .home-content div {
   display: flex;
@@ -104,22 +121,21 @@ body {
   animation: 0.9s ease forwards drop;
   grid-area: img;
 }
-.home div:last-child {
+.home-content div:last-child {
   animation: 0.9s ease forwards right-left;
-  width: 90%;
   grid-area: text;
 }
-.home div img {
+.home-content img {
   height: 90vh;
 }
-.home div h1 {
+.home-content h1 {
   font-size: 4.6rem;
   font-weight: 900;
 }
-.home div h1 img {
+.home-content h1 img {
   height: 3.6rem;
 }
-.home div span {
+.home-content span {
   width: 36vw;
   font-size: 1.3rem;
   font-weight: 300;
@@ -128,7 +144,6 @@ body {
 }
 
 .projects {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,7 +191,6 @@ body {
 }
 
 .experience {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -184,8 +198,8 @@ body {
   background: rgb(192, 255, 255);
   background: radial-gradient(
     circle,
-    rgba(192, 255, 255, 0.2189250700280112) 0%,
-    rgba(255, 255, 255, 1) 47%
+    rgba(192, 255, 255, 0.2189250700280112) 30%,
+    rgba(255, 255, 255, 1) 77%
   );
 }
 .experience h2 {
@@ -237,9 +251,9 @@ body {
 }
 
 .contact {
-  height: 76vh;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background: linear-gradient(
     13deg,
@@ -256,10 +270,10 @@ body {
   font-weight: 900;
 }
 .contact div {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  gap: 3rem;
 }
 .contact div div {
   width: 20vw;
@@ -289,3 +303,59 @@ body {
 .contact div a img:hover {
   opacity: 100%;
 }
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 40em) {
+  .header {
+    height: 12vh;
+    justify-content: space-around;
+    gap: 0rem;
+    padding: 0 0.6rem;
+  }
+  .header-option {
+    font-size: 0.8rem;
+  }
+  .header-option:last-child {
+    padding: 0.6rem;
+  }
+
+  .home-content {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 3rem 0rem;
+    gap: 2rem;
+  }
+  .home-content img {
+    height: 40vh;
+  }
+  .home-content div {
+    gap: 1.9rem;
+  }
+  .home-content div:last-child {
+    flex-grow: 2;
+  }
+  .home-content h1 {
+    font-size: 2.3rem;
+  }
+  .home-content h1 img {
+    height: 1.8rem;
+  }
+  .home-content span {
+    width: 86vw;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.06rem;
+    line-height: 1rem;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+/* @media only screen and (min-width: 48em) {...} */
+
+/* Large devices such as laptops (1024px and up) */
+/* @media only screen and (min-width: 64em) {...} */
+
+/* Largest devices such as desktops (1280px and up) */
+/* @media only screen and (min-width: 80em) {...} */
