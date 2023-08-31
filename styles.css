@@ -177,6 +177,7 @@ section {
   gap: 1.9rem;
   border-radius: 1rem;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  transition: all 0.3 ease-out;
 }
 .projects-card-content {
   display: flex;
@@ -218,9 +219,6 @@ section {
   justify-content: center;
   border-radius: 1rem;
   overflow: hidden;
-}
-.projects-card:hover {
-  animation: ease-in 0.4s alternate infinite bounce;
 }
 .projects-card-stack {
   display: flex;
