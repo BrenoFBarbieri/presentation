@@ -12,11 +12,13 @@ html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   font-family: var(--font-family-primary);
+  touch-action: none;
 }
 body {
   color: #fff;
   overflow-x: hidden;
   background-color: #0d0d0d;
+  touch-action: none;
 }
 body::-webkit-scrollbar {
   width: 1rem; /* width of the entire scrollbar */
