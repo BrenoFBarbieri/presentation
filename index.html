@@ -293,29 +293,31 @@
       document.getElementById(`btn-${section}`),
       document.getElementById(`tooltip-${section}`),
     ]);
+    function toogleTooltip(elementsList) {
+      elementsList.map((elements) => {
+        elements[0]?.addEventListener("mouseenter", function (event) {
+          showTooltip(elements);
+        });
+        elements[0]?.addEventListener("touchstart", function (event) {
+          showTooltip(elements);
+        });
+        elements[0]?.addEventListener("mouseleave", function (event) {
+          hiddenTooltip(elements);
+        });
+        elements[0]?.addEventListener("touchend", function (event) {
+          setTimeout(() => {
+            hiddenTooltip(elements);
+          }, 600);
+        });
+      });
+    }
+    function showTooltip(elements) {
+      elements[1].style.visibility = "visible";
+      elements[1].style.opacity = 1;
+    }
     function hiddenTooltip(elements) {
       elements[1].style.visibility = "hidden";
       elements[1].style.opacity = 0;
-    }
-    function toogleTooltip(elementsList) {
-      elementsList.map((elements) => {
-        elements[0]?.addEventListener("pointerenter", function (event) {
-          elements[1].style.visibility = "visible";
-          elements[1].style.opacity = 1;
-        });
-        elements[0]?.addEventListener("pointerleave", function (event) {
-          if (screen.width < 1024 || screen.height < 768) {
-            setTimeout(() => {
-              hiddenTooltip(elements);
-            }, 600);
-          } else {
-            hiddenTooltip(elements);
-          }
-        });
-        // elements[0]?.addEventListener("touchend", function (event) {
-        //   hiddenTooltip(elements);
-        // });
-      });
     }
     toogleTooltip(menuItems);
 
