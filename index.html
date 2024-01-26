@@ -3,217 +3,361 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Presentation Breno Barbieri</title>
+    <title>Breno Barbieri</title>
     <link rel="icon" type="image/png" href="assets/hacker.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&family=Roboto+Mono:wght@100;300;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700&family=Roboto:wght@100;300;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="reset-css.css" />
     <link rel="stylesheet" href="styles.css" />
-    <!-- <script type="text/javascript" src="mind.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/678eab13d0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <section id="home" class="home">
-      <header class="header">
-        <a class="header-option" href="#home">Home</a>
-        <a class="header-option" href="#projects">Projects</a>
-        <a class="header-option" href="#experience">Experience</a>
-        <a class="header-option" href="#contact">Get in contact</a>
-      </header>
-      <div class="home-content">
-        <div>
-          <img src="assets/code-typing-bro.svg" alt="Programmer" />
-        </div>
-        <div>
-          <h1>
-            I'm Breno, <img src="assets/aceno-de-mao.png" /><br />nice to meet
-            you!
-          </h1>
-          <span>
-            I'm a Senior Developer, Designer and Cloud Architect. I work and
-            have worked on large projects for large companies with different
-            levels of challenges and objectives, bringing value in various
-            aspects to the projects involved.
-          </span>
-        </div>
-      </div>
-    </section>
 
-    <section id="projects" class="projects">
-      <h2>Projects Developed</h2>
-      <div class="projects-content">
-        <div class="projects-card">
-          <div class="projects-card-logo">
-            <img
-              src="assets/governofederal.jpg"
-              alt="Logo MAPA - Governo Federal"
-            />
-            <span>Governo<br />Federal</span>
-          </div>
-          <div class="projects-card-content">
-            <div class="projects-card-stack">
-              <img src="assets/typescript.png" alt="TypeScript" />
-              <img src="assets/nodejs.png" alt="NodeJS" />
-              <img src="assets/react.png" alt="ReactJS" />
-              <img src="assets/nextjs.webp" alt="NextJS" />
-            </div>
-            <p>
-              Requested to participate in a revolution in the Ministry of
-              Agriculture, Livestock and Supply, Brazilian Federal Government.
-              To create a series of systems that will leave aside the archaic
-              and anti-environmental paperwork process for a new technological
-              and analytical phase.
-            </p>
-          </div>
+  <body>
+    <header class="header">
+      <nav class="header-options">
+        <div class="header-option">
+          <legend id="tooltip-home">Home</legend>
+          <a id="btn-home" href="#home">
+            <i class="fa-sharp fa-solid fa-house"></i>
+          </a>
         </div>
-        <div class="projects-card">
-          <div class="projects-card-logo">
-            <img src="assets/movistar.webp" alt="Logo Movistar" />
-            <span>Movistar</span>
-          </div>
-          <div class="projects-card-content">
-            <div class="projects-card-stack">
-              <img src="assets/javascript.png" alt="JavaScript" />
-              <img src="assets/html5.png" alt="HTML5" />
-              <img src="assets/css.webp" alt="CSS" />
-            </div>
-            <p>
-              Escalated to improve legacy CSS, fix, refactor and implement new
-              JavaScript code, and implement Google Analytics for system access
-              and usage analysis
-            </p>
-          </div>
+
+        <div class="header-option">
+          <legend id="tooltip-experience">Experience</legend>
+          <a id="btn-experience" href="#experience">
+            <i class="fa-sharp fa-solid fa-address-card"></i>
+          </a>
         </div>
-        <div class="projects-card">
-          <div class="projects-card-logo">
-            <img src="assets/virtuacare.png" alt="Logo Virtua Care" />
-            <span>Virtua<br />Care</span>
-          </div>
-          <div class="projects-card-content">
-            <div class="projects-card-stack">
-              <img src="assets/typescript.png" alt="TypeScript" />
-              <img src="assets/nestjs.png" alt="NestJS" />
-              <img src="assets/react.png" alt="ReactJS" />
-            </div>
-            <p>
-              Hired to solve multiple existing bugs in the already developed
-              project and finish the deliveries of pending functions
-            </p>
-          </div>
+
+        <div class="header-option">
+          <legend id="tooltip-contact">Contact</legend>
+          <a id="btn-contact" href="#contact">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+          </a>
         </div>
-        <div class="projects-card">
-          <div class="projects-card-logo">
-            <img src="assets/vidaconnect.png" alt="Logo Vida Connect" />
-            <span>Vida<br />Connect</span>
-          </div>
-          <div class="projects-card-content">
-            <div class="projects-card-stack">
-              <img src="assets/typescript.png" alt="TypeScript" />
-              <img src="assets/nestjs.png" alt="NestJS" />
-              <img src="assets/graphql.png" alt="GraphQL" />
-              <img src="assets/react.png" alt="ReactJS" />
-            </div>
-            <p>
-              Hired to solve multiple existing bugs in the already developed
-              project and finish the deliveries of pending functions
-            </p>
-          </div>
-        </div>
-        <div class="projects-card">
-          <div class="projects-card-logo">
-            <img src="assets/docol.png" alt="Logo Docol" />
-            <span>Docol</span>
-          </div>
-          <div class="projects-card-content">
-            <div class="projects-card-stack">
-              <img src="assets/javascript.png" alt="JavaScript" />
-              <img src="assets/html5.png" alt="HTML5" />
-              <img src="assets/css.webp" alt="CSS" />
-            </div>
-            <p>
-              Responsible for correcting, refactoring and implementing new
-              functions in the legacy JavaScript system
-            </p>
-          </div>
-        </div>
-        <div class="projects-card">
-          <div class="projects-card-logo">
-            <img src="assets/saleslogics.jpg" alt="Logo saleslogics" />
-            <span>Saleslogics</span>
-          </div>
-          <div class="projects-card-content">
-            <div class="projects-card-stack">
-              <img src="assets/javascript.png" alt="JavaScript" />
-              <img src="assets/nodejs.png" alt="NodeJS" />
-              <img src="assets/react.png" alt="ReactJS" />
-            </div>
-            <p>
-              I joined the project as a Full Stack developer with the mission to
-              take the project from MVP to production, evolving to Full Cycle
-              and Tech Lead later. We managed to deliver to the target customer
-              PVM
-            </p>
-          </div>
-        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="home">
+      <img
+        class="home-img"
+        src="/assets/dog.png"
+        alt="Colorful fox in fractals"
+      />
+      <div class="home-apresentation">
+        <h1>
+          I'm Breno, <img src="assets/aceno-de-mao.png" /><br />nice to meet
+          you!
+        </h1>
+
+        <span>
+          I'm a Senior Developer, Designer and Cloud Architect. I work and have
+          worked on large projects for large companies with different levels of
+          challenges and objectives, bringing value in various aspects to the
+          projects involved.
+        </span>
       </div>
     </section>
 
     <section id="experience" class="experience">
-      <h2>Experiences</h2>
-      <div class="exp-content">
-        <div class="exp-card">
-          <h6>Technologies</h6>
-          <div>
-            <img src="assets/docker.png" alt="Logo Docker" />
-            <img src="assets/git.png" alt="Logo GIT" />
-            <img src="assets/html5.png" alt="Logo HTML" />
-            <img src="assets/css.webp" alt="Logo CSS" />
-            <img src="assets/npm.png" alt="Logo NPM" />
-            <img src="assets/typescript.png" alt="Logo TypeScript" />
-            <img src="assets/nodejs.png" alt="Logo NodeJs" />
-            <img src="assets/nestjs.png" alt="Logo NestJs" />
-            <img src="assets/graphql.png" alt="Logo GraphQL" />
-            <img src="assets/react.png" alt="Logo ReactJs" />
-            <img src="assets/nextjs.webp" alt="Logo NextJs" />
-            <img src="assets/python.png" alt="Logo Python" />
+      <h1>Experiences</h1>
+      <div class="exp-container">
+        <div class="exp-contents">
+          <div class="exp-content">
+            <legend>Global Hitss</legend>
+            <div>
+              <img
+                src="/assets/governofederal.jpg"
+                alt="Logo MAPA Governo Federal | PesqBrasil - Mapa de Bordo"
+                onclick="handleDescritionExperience('pesqbrasil')"
+              />
+            </div>
+          </div>
+
+          <div class="exp-content">
+            <legend>Redfox Digital</legend>
+            <div>
+              <img
+                src="/assets/vidaconnect.png"
+                alt="Logo Vida Connect App"
+                onclick="handleDescritionExperience('vida-connect')"
+              />
+              <img
+                src="/assets/virtuacare.png"
+                alt="Logo Virtua Care App"
+                onclick="handleDescritionExperience('virtua-care')"
+              />
+            </div>
+          </div>
+
+          <div class="exp-content">
+            <legend>Kumulus Cloud & Data</legend>
+            <!-- <legend>Redfox Digital</legend> -->
+            <div>
+              <img
+                src="/assets/saleslogics.jpg"
+                alt="Logo Saleslogics App"
+                onclick="handleDescritionExperience('saleslogics')"
+              />
+              <img
+                src="/assets/docol.png"
+                alt="Logo Docol"
+                onclick="handleDescritionExperience('docol')"
+              />
+              <img
+                src="/assets/movistar.webp"
+                alt="Logo Movistar Spanish Telephone"
+                onclick="handleDescritionExperience('movistar')"
+              />
+            </div>
           </div>
         </div>
 
-        <div class="exp-card">
-          <h6>Worked Companies</h6>
-          <div>
-            <img src="assets/kumulus.jpg" alt="Logo Kumulus Cloud & Data" />
-            <img src="assets/redfox.jpeg" alt="Logo Redfox Digital Solution" />
-            <img src="assets/globalhitss.jpeg" alt="Logo Global Hitss" />
+        <div class="exp-description">
+          <div
+            id="exp-description-pesqbrasil"
+            class="exp-description-content"
+            style="display: flex"
+          >
+            <legend>
+              Company: Global Hitss | Project: MAPA (Ministério da Agricultura e
+              Pecuária) / PesqBrasil - Mapa de Bordo
+            </legend>
+            <span>Description:</span>
+            <p>
+              Working as a senior software architect, I had the great pleasure
+              of participating in this technological revolution in my country,
+              where I had the opportunity to add my technical knowledge to
+              develop with quality and integrity. Responsible for recreating the
+              entire UI/UX design of the application and incorporating it into
+              the frontend.
+            </p>
+            <span>Technologies:</span>
+            <p>
+              Typescript, NodeJS, ExpressJS, TypeORM, Postgres, ReactJS, NextJS
+              and React Hook Form.
+            </p>
+          </div>
+          <div id="exp-description-virtua-care" class="exp-description-content">
+            <legend>Company: RedFox Digital | Project: Virtua Care</legend>
+            <span>Description:</span>
+            <p>
+              Hired to ensure quality delivery to the customer by making
+              corrections, implementations and improvements of two different but
+              integrated systems (Vida Connect).
+            </p>
+            <span>Technologies:</span>
+            <p>NestJs, Mongodb, ReactJs, Redux and Styled Components.</p>
+          </div>
+          <div
+            id="exp-description-vida-connect"
+            class="exp-description-content"
+          >
+            <legend>Company: RedFox Digital | Project: Vida Connect</legend>
+            <span>Description:</span>
+            <p>
+              Hired to ensure quality delivery to the customer by making
+              corrections, implementations and improvements of two different but
+              integrated systems (Virtua Care).
+            </p>
+            <span>Technologies:</span>
+            <p>
+              NestJs, GraphQL, Apollo, Sequelize, MySQL, ReactJs, Redux and
+              Firebase.
+            </p>
+          </div>
+          <div id="exp-description-docol" class="exp-description-content">
+            <legend>Company: Kumulus Cloud & Data | Project: Docol</legend>
+            <span>Description:</span>
+            <p>
+              Working exclusively on the backend, a system developed in NodeJs
+              with TypeScript, TypeORM and TSyringe (Dependency Injection),
+              responsible for completing the project, finishing the API's
+              missing and fixing the previously existing bugs.
+            </p>
+            <span>Technologies:</span>
+            <p>Typescript, NodeJs, TypeORM, TSyringe, HTML5 and CSS.</p>
+          </div>
+          <div id="exp-description-saleslogics" class="exp-description-content">
+            <legend>
+              Company: Kumulus Cloud & Data | Project: Saleslogics
+            </legend>
+            <span>Description:</span>
+            <p>
+              Acting in the implementation of the platform for a new client,
+              responsible for creating new screens and their integration.
+            </p>
+            <span>Technologies:</span>
+            <p>
+              NodeJs, AdonisJS, TypeORM, ReactJs, Redux, Styled-components,
+              HTML5 and CSS.
+            </p>
+          </div>
+          <div id="exp-description-movistar" class="exp-description-content">
+            <legend>Company: Kumulus Cloud & Data | Project: Movistar</legend>
+            <span>Description:</span>
+            <p>
+              Worked on the complete refactoring of the style (css) of the
+              system, as well as corrections and improvements in the project
+              (JS), using Microsoft technologies such as Azure AD B2C, Cosmos
+              DB, Function App and etc.
+            </p>
+            <span>Technologies:</span>
+            <p>
+              JavaScript, HTML5, CSS, Cosmos DB NoSQL and Azure Function App.
+            </p>
           </div>
         </div>
-        <img
-          class="exp-bg"
-          src="assets/version-control-bro.svg"
-          alt="Version Control"
-        />
       </div>
     </section>
 
     <section id="contact" class="contact">
-      <h2>Contacts</h2>
-      <div>
-        <img class="contact-img" src="assets/freelancer.svg" alt="Freelancer" />
+      <h1>Contact</h1>
+
+      <img src="/assets/earth.png" alt="Globo terrestre expelindo algoritmos" />
+
+      <form
+        id="form-email"
+        class="contact-form"
+        action="https://formsubmit.co/breno.fbarbieri@gmail.com"
+        method="POST"
+      >
         <div>
-          <a href="tel:+5519993390408">
-            <img src="assets/phone.png" alt="Phone" />
-          </a>
-          <a href="mailto:breno.fbarbieri@gmail.com?subject=Project Budget">
-            <img src="assets/email.png" alt="Email" />
-          </a>
-          <a href="https://www.linkedin.com/in/brenobarbieri/" target="_blank">
-            <img src="assets/linkedin.png" alt="Linkedin" />
-          </a>
+          <div>
+            <label for="input-name">Name</label>
+            <input
+              type="name"
+              name="name"
+              id="input-name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div>
+            <label for="input-email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="input-email"
+              placeholder="username@exemplo.com.br"
+              required
+            />
+          </div>
         </div>
+        <div>
+          <label for="input-message">Message</label>
+          <textarea
+            id="input-message"
+            name="message"
+            rows="5"
+            cols="33"
+            placeholder="Write your subject here..."
+            required
+          ></textarea>
+        </div>
+        <input
+          type="hidden"
+          name="_subject"
+          value="Project evaluation - Contact via Portfolio Website"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500" />
+        <button id="btn-submit" type="submit">Send</button>
+      </form>
+
+      <div class="contact-container" rel="external">
+        <a href="https://www.linkedin.com/in/brenobarbieri/" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="tel:+5519993390408" rel="external">
+          <i class="fa-solid fa-phone"></i>
+        </a>
       </div>
     </section>
   </body>
+
+  <script>
+    const sections = ["home", "experience", "contact"];
+    const menuItems = sections.map((section) => [
+      document.getElementById(`btn-${section}`),
+      document.getElementById(`tooltip-${section}`),
+    ]);
+    function hiddenTooltip(elements) {
+      elements[1].style.visibility = "hidden";
+      elements[1].style.opacity = 0;
+    }
+    function toogleTooltip(elementsList) {
+      elementsList.map((elements) => {
+        elements[0]?.addEventListener("pointerenter", function (event) {
+          elements[1].style.visibility = "visible";
+          elements[1].style.opacity = 1;
+        });
+        elements[0]?.addEventListener("pointerleave", function (event) {
+          if (screen.width < 1024 || screen.height < 768) {
+            setTimeout(() => {
+              hiddenTooltip(elements);
+            }, 600);
+          } else {
+            hiddenTooltip(elements);
+          }
+        });
+        // elements[0]?.addEventListener("touchend", function (event) {
+        //   hiddenTooltip(elements);
+        // });
+      });
+    }
+    toogleTooltip(menuItems);
+
+    function handleDescritionExperience(experience) {
+      for (description of document.getElementsByClassName(
+        `exp-description-content`
+      )) {
+        description.style.display = "none";
+      }
+      document.getElementById(`exp-description-${experience}`).style.display =
+        "flex";
+    }
+
+    const formEmail = document.getElementById("form-email");
+    formEmail.addEventListener("submit", submitAndAlert);
+    function submitAndAlert(event) {
+      try {
+        event.preventDefault();
+        const form = new FormData(formEmail);
+        const btnSubmit = document.getElementById("btn-submit");
+        btnSubmit.innerHTML = "Sending...";
+        fetch("https://formsubmit.co/breno.fbarbieri@gmail.com", {
+          method: "POST",
+          body: form,
+        })
+          .then((resp) => {
+            btnSubmit.innerHTML = "Send";
+            alert(
+              "Email successfully sent! \n Thank you for getting in touch, I will get back to you soon with a response."
+            );
+          })
+          .catch((err) => {
+            console.error(err);
+            btnSubmit.innerHTML = "Send";
+            alert(
+              "Sorry, there was an error sending the email. Please try again..."
+            );
+          });
+      } catch (err) {
+        console.error(err);
+        btnSubmit.innerHTML = "Send";
+        alert(
+          "Sorry, there was an error sending the email. Please try again..."
+        );
+      }
+    }
+  </script>
 </html>
