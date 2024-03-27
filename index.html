@@ -331,17 +331,15 @@
       document
         .getElementById("btn-contact")
         .classList.remove("header-option-selected");
-      if (scrollYValue === 0) {
+      if (scrollYValue <= 0) {
         document
           .getElementById("btn-home")
           .classList.add("header-option-selected");
-      }
-      if (scrollYValue === 652) {
+      } else if (scrollYValue >= 600 && scrollYValue <= 1600) {
         document
           .getElementById("btn-experience")
           .classList.add("header-option-selected");
-      }
-      if (scrollYValue === 1304) {
+      } else if (scrollYValue >= 1600) {
         document
           .getElementById("btn-contact")
           .classList.add("header-option-selected");
