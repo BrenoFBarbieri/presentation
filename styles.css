@@ -165,6 +165,14 @@ span {
   color: #fff;
 }
 
+.header-option-selected {
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 23px 4px rgba(71, 71, 71, 0.4);
+  -moz-box-shadow: 0px 0px 23px 4px rgba(71, 71, 71, 0.4);
+  box-shadow: 0px 0px 23px 4px rgba(71, 71, 71, 0.4);
+  background-color: var(--primary-color);
+}
+
 .home {
   gap: 9vw;
   position: relative;

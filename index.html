@@ -320,6 +320,35 @@
       elements[1].style.opacity = 0;
     }
     toogleTooltip(menuItems);
+    function activeOptionByScroll() {
+      const scrollYValue = window.scrollY;
+      document
+        .getElementById("btn-home")
+        .classList.remove("header-option-selected");
+      document
+        .getElementById("btn-experience")
+        .classList.remove("header-option-selected");
+      document
+        .getElementById("btn-contact")
+        .classList.remove("header-option-selected");
+      if (scrollYValue === 0) {
+        document
+          .getElementById("btn-home")
+          .classList.add("header-option-selected");
+      }
+      if (scrollYValue === 652) {
+        document
+          .getElementById("btn-experience")
+          .classList.add("header-option-selected");
+      }
+      if (scrollYValue === 1304) {
+        document
+          .getElementById("btn-contact")
+          .classList.add("header-option-selected");
+      }
+    }
+    activeOptionByScroll();
+    document.addEventListener("scroll", activeOptionByScroll);
 
     function handleDescritionExperience(experience) {
       for (description of document.getElementsByClassName(
@@ -330,7 +359,6 @@
       document.getElementById(`exp-description-${experience}`).style.display =
         "flex";
     }
-
     const formEmail = document.getElementById("form-email");
     formEmail.addEventListener("submit", submitAndAlert);
     function submitAndAlert(event) {
