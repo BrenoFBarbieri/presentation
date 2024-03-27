@@ -405,6 +405,8 @@ span {
 
   .home {
     flex-direction: column;
+    justify-content: start;
+    padding-top: 3rem;
   }
   .home-apresentation {
     width: 86vw;
@@ -414,11 +416,13 @@ span {
     width: 1.6rem;
   }
   .home-img {
-    width: 50vw;
+    width: 60vw;
   }
 
   .experience {
     justify-content: center;
+    justify-content: start;
+    padding-top: 3rem;
     gap: 6vh;
   }
   .exp-container {
@@ -466,6 +470,8 @@ span {
 
   .contact {
     justify-content: center;
+    justify-content: start;
+    padding-top: 3rem;
     gap: 6vw;
   }
   .contact > img {
